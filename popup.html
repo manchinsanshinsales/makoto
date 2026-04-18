@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotebookLM Clipper</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="icons/icon128.png" alt="Logo">
+            <h1>Notebook Clipper</h1>
+        </header>
+
+        <!-- Target Setting -->
+        <div class="card settings">
+            <div class="settings-group">
+                <label for="notebook-url">Target Notebook URL</label>
+                <input type="text" id="notebook-url" placeholder="https://notebooklm.google.com/notebook/...">
+            </div>
+        </div>
+
+        <!-- Current Page Action -->
+        <div class="card">
+            <div id="current-page-info">
+                <p id="page-title" class="queue-item-title">Loading...</p>
+                <p id="page-url" class="queue-item-url">...</p>
+            </div>
+            <button id="clip-btn" class="btn-primary" style="margin-top: 12px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"></path></svg>
+                Collect Current Page
+            </button>
+        </div>
+
+        <!-- Queue -->
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h2 style="font-size: 0.9rem; margin: 0;">Queued Items <span id="queue-count" class="badge">0</span></h2>
+                <button id="clear-btn" style="background: none; border: none; color: var(--text-dim); cursor: pointer; font-size: 0.75rem;">Clear All</button>
+            </div>
+            <div id="queue-list">
+                <!-- Items will be injected here -->
+            </div>
+        </div>
+
+        <button id="sync-btn" class="btn-primary" style="background: linear-gradient(to right, #10b981, #3b82f6);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            Send to NotebookLM
+        </button>
+
+        <footer>
+            Collect ideas, Sync later.
+        </footer>
+    </div>
+    <script src="scripts/popup.js"></script>
+</body>
+</html>

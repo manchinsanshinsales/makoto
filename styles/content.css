@@ -1,0 +1,57 @@
+#nb-clipper-helper {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 99999;
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid rgba(56, 189, 248, 0.5);
+    border-radius: 12px;
+    padding: 12px 16px;
+    color: white;
+    font-family: 'Outfit', sans-serif, system-ui;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    display: none;
+    animation: nb-slide-in 0.3s ease-out;
+}
+
+@keyframes nb-slide-in {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.nb-helper-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#nb-item-count {
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+#nb-import-all {
+    background: linear-gradient(to right, #38bdf8, #818cf8);
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+#nb-import-all:hover {
+    opacity: 0.9;
+}

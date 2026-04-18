@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "NotebookLM Smart Clipper",
+  "version": "1.0",
+  "description": "Collect website information and snippets to NotebookLM effortlessly.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "contextMenus",
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://notebooklm.google.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/content.js"],
+      "css": ["styles/content.css"]
+    }
+  ],
+  "icons": {
+    "128": "icons/icon128.png"
+  }
+}
