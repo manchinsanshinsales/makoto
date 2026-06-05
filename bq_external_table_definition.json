@@ -1,0 +1,43 @@
+{
+  "sourceFormat": "GOOGLE_SHEETS",
+  "sourceUris": [
+    "https://docs.google.com/spreadsheets/d/YOUR_SPREADSHEET_ID"
+  ],
+  "googleSheetsOptions": {
+    "skipLeadingRows": 1
+  },
+  "schema": {
+    "fields": [
+      {
+        "name": "date",
+        "type": "DATE",
+        "mode": "NULLABLE",
+        "description": "売上日付 (YYYY-MM-DD)"
+      },
+      {
+        "name": "product_name",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "商品名"
+      },
+      {
+        "name": "quantity",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "数量"
+      },
+      {
+        "name": "unit_price",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "単価"
+      },
+      {
+        "name": "total_amount",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "合計金額"
+      }
+    ]
+  }
+}
