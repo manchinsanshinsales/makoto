@@ -4,6 +4,8 @@
 - [ ] [期限: 2026-06-20] PDE試験の受験と合格 #学習 #PDE
 
 ## 🟡 中優先度
-- [ ] [期限: 2026-06-18] 弱点トピック（今回作成した records/past-questions.md）の再確認 #学習 #PDE
 - [ ] [期限: なし] PostgreSQLでの機密データ除外ビュー(View)と行レベルセキュリティ(RLS)の構築 #DB #セキュリティ
 - [ ] [期限: なし] Cloud RunでのMCPサーバー構築とFirebase Auth連携のセキュリティテスト #AI #MCP
+
+## ✅ 完了（直近2週間）
+- [x] [完了: 2026-06-19] 弱点トピック（今回作成した records/past-questions.md）の再確認 #学習 #PDE
